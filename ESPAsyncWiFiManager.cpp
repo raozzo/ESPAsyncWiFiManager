@@ -693,7 +693,7 @@ void AsyncWiFiManager::resetSettings() {
 #if defined(ESP8266)
   WiFi.disconnect (true);
 #else
-  WiFi.disconnect (true, true);
+  WiFi.disconnect (true);
 #endif
   WiFi.persistent (false);
 	
